@@ -175,8 +175,8 @@ function Search({ panTo }) {
         <ComboboxPopover>
           <ComboboxList>
             {status === "OK" &&
-              data.map(({ id, description }, index) => (
-                <ComboboxOption key={index} value={description} />
+              data.map(({ id, description }) => (
+                <ComboboxOption key={id} value={description} />
               ))}
           </ComboboxList>
         </ComboboxPopover>
