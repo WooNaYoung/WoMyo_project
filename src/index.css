@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100%;
+  background-color: #efefef;
+  transition: 4s ease;
+}
+
+.appwarm {
+  background-color: rgb(243, 176, 198);
+  transition: 2s ease;
+}
+
+.margin {
+  margin: 0 auto;
+  width: 1000px;
+  /* text-align: center; */
+}
+
+/* App.js */
+
+.top {
+  text-align: right;
+}
+
+.top button {
+  margin-left: 5px;
+  width: 30px;
+}
+
+/* serach */
+.search-box {
+  width: 1000px;
+  margin: 20px auto;
+  /* background-color: #eee; */
+}
+
+.search-bar-1 {
+  width: 350px;
+}
+
+.search-bar-2 {
+  width: 1000px;
+  /* margin-left: 30px; */
+}
+
+.search-bar {
+  display: inline-block;
+  padding: 20px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  /* border-radius: 10px; */
+}
+
+.search-bar:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* serach */
+
+/*location*/
+.location-box {
+  /* background-color: royalblue; */
+  width: 1000px;
+
+  /* font-size: 30px; */
+  color: #333;
+  /* margin-bottom: 20px; */
+}
+
+/*location*/
+
+/*weather-box*/
+
+/*weather-box*/
+
+/* App.js */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.search {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-30%);
+  width: 1000px;
+  max-width: 400px;
+  z-index: 10;
+}
+
+.locate {
+  position: absolute;
+  top: 1em;
+  right: 50%;
+  background: none;
+  z-index: 10;
+}
