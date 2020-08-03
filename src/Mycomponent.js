@@ -32,8 +32,8 @@ const options = {
   zoomControl: true,
 };
 const center = {
-  lat: -3.745,
-  lng: -38.523,
+  lat: 37.47979,
+  lng: 126.88394,
 };
 
 export default function Mycomonent() {
@@ -76,7 +76,7 @@ export default function Mycomonent() {
       <GoogleMap
         id="map"
         mapContainerStyle={mapContainerStyle}
-        zoom={8}
+        zoom={16}
         center={center}
         options={options}
         onClick={onMapClick}
@@ -164,9 +164,10 @@ function Search({ panTo }) {
   };
 
   return (
-    <div className="search">
+    <div>
       <Combobox onSelect={handleSelect}>
         <ComboboxInput
+          className="search search-bar"
           value={value}
           onChange={handleInput}
           disabled={!ready}

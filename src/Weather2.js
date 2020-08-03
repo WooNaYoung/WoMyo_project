@@ -75,14 +75,14 @@ const Weather2 = () => {
           className="search-bar search-bar-1"
         /> */}
 
-        <input
+        {/* <input
           type="text"
           placeholder="추천 코디를 알고 싶은 나라 이름, 혹은 도시명을 입력하세요"
           className="search-bar search-bar-2"
           onChange={(e) => setQuery(e.target.value)}
           value={query}
           onKeyPress={search}
-        />
+        /> */}
       </div>
       {typeof weather.main != "undefined" ? (
         <div>
@@ -98,8 +98,6 @@ const Weather2 = () => {
           </div>
 
           <div className="weather margin">{weather.weather[0].main}</div>
-
-          <div className="wearher margin">Sunny</div>
         </div>
       ) : (
         ""
