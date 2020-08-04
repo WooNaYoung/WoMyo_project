@@ -100,7 +100,9 @@ export default function Mycomonent() {
             }}
           >
             <div>
-              <h3>클릭</h3>
+              <p>
+                {selected.lat} {selected.lng}
+              </p>
             </div>
           </InfoWindow>
         ) : null}
@@ -116,6 +118,8 @@ function Locate({ panTo }) {
       onClick={() => {
         navigator.geolocation.getCurrentPosition(
           (position) => {
+            console.log(position.coords.latitude, position.coords.longitude);
+
             panTo({
               lat: position.coords.latitude,
               lng: position.coords.longitude,
@@ -173,6 +177,7 @@ function Search({ panTo }) {
           disabled={!ready}
           placeholder="Search your location"
         />
+
         <ComboboxPopover>
           <ComboboxList>
             {status === "OK" &&

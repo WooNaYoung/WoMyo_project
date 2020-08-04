@@ -64,6 +64,7 @@ const Weather2 = () => {
           : "app"
       }
     >
+      <h4>임시로 놔둠. 바탕 온도 변화 나중에 참고할 수도 있음</h4>
       <div className="top margin">
         <button>KR</button>
         <button>EN</button>
